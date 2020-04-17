@@ -85,6 +85,9 @@ http://localhost:3000/accounts/user       Will return a no id param error
 1. Following the code structure and formation template patterns seen here. Have a go at writing and deploying a lamdba with the AWS SAM CLI. 
 2. Going even further. AWS offers so much than running lambdas. Try integrating your lambda with another AWS service running on localstack. 
 
+## Extending and contributing
+Want to extend this repo and provide more info on using AWS services locally? Fork and raise a PR, it will be reviewed and considered for merging. 
+
 
 License
 =======
