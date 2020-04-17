@@ -10,4 +10,4 @@ exports.handler = async (req, event) => {
         statusCode: 200,
         body: JSON.stringify(user)
     }
-}
+};

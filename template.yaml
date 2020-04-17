@@ -20,13 +20,20 @@ Resources:
           Properties:
             Path: /accounts/user
             Method: get
+  ReplayEventFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/replay-event/index.handler
+      Runtime: nodejs12.x
+      MemorySize: 256
+      Timeout: 900
 
 Outputs:
   GetUserApi:
     Description: "API Gateway endpoint URL for get user function"
     Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/accounts/user"
   GetUserFunction:
-    Description: "Hello World Lambda Function ARN"
+    Description: "Get User Lambda Function ARN"
     Value: !GetAtt GetUserFunction.Arn
   GetUserFunctionIamRole:
     Description: "Implicit IAM Role created for Get User function"
