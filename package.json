@@ -1,0 +1,17 @@
+{
+  "name": "local-lambdas",
+  "version": "1.0.0",
+  "description": "Tutorial app for deploying lambdas to LocalStack",
+  "main": "index.js",
+  "repository": "https://github.com/chrisjwwalker/local-lambdas",
+  "author": "chrisjwwalker",
+  "license": "Apache",
+  "dependencies": {},
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
