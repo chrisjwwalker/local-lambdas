@@ -6,6 +6,7 @@ A test project demonstrating how to publish your lambdas to a localstack instanc
 ## Prerequistes
 - Docker and docker compose
 - Localstack; our AWS simulator
+- [AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html)
 
 
 ## What do?
