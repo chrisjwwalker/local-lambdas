@@ -7,6 +7,19 @@ Globals:
     Timeout: 3
 
 Resources:
+  ScheduledLoggingFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/scheduled-logger/index.handler
+      Runtime: nodejs12.x
+      MemorySize: 256
+      Timeout: 900
+      Events:
+        OneMinuteTriggerEvent:
+          Type: Schedule
+          Properties:
+            Schedule: rate(1 minute)
+
   GetUserFunction:
     Type: AWS::Serverless::Function
     Properties:
